@@ -1,1 +1,1 @@
-- Testing git plugin
+- Testing git plugin on logseq
