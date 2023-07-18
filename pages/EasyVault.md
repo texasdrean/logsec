@@ -1,1 +1,3 @@
-- ```mix docs --format html --open
+- ```elixir
+   mix docs --format html --open ```
+-
