@@ -1,0 +1,85 @@
+- ![c_M165_s_0100_Introduction.pdf](../assets/c_M165_s_0100_Introduction_1681914466701_0.pdf)
+-
+- ### Eléments d'une BDD
+	- ((643ffb8b-3079-4b14-ab64-eef7f8aa4126))
+-
+- #### SQL -> Base de données relationnelle
+	- Tables et rangées
+		- Ne peut évoluer que verticalement (ajout de puissance à une machine)
+		- Language spécifique (SQL)
+- #### NoSQL -> Base données NON relationnelle ( Not Only SQL )
+	- ((64401c5d-90c1-4109-9908-1bee9f46ddac))
+	- ((64401cac-d40e-4035-8d6f-96dff0b7e490))
+	- ((64401d9d-6167-484c-aa15-8197906f7e5a))
+	- ((64401e1b-35c1-4a09-8baf-2b6a74fa08d9))
+		- Peut évoluer verticalement ET horizontalement ( ajout de machines )
+		- N'a pas de language spécifique
+-
+- ### Acteurs -> DBMS (DataBase Management System)
+	- Cassandra
+	- CouchDB
+	- mongoDB
+	- ...
+-
+- ## NoSQL
+- ### Clé-valeurs
+  id:: 64401c5d-90c1-4109-9908-1bee9f46ddac
+	- la plus simple
+	- 3 opérations : PUT - GET - DELETE
+	- pas de language de requête
+	- adaptée aux caches et accès rapide aux données
+	- lecture / écriture = accès disque simple
+	- Amazon DynamoDB, Redis, Voldemort (linkedin), ...
+- ((64402034-5701-4979-ab59-805268a010aa))
+-
+- ### Colonnes - large
+  id:: 64401cac-d40e-4035-8d6f-96dff0b7e490
+	- se rapproche le plus des tables dans une base relationnelle
+		- tables / lignes / colonnes
+		- colonnes dynamiques (pas de valeur **null**)
+	- plus évolutive et flexible que clé-valeurs
+	- Big Table, Apache HBase, Cassandra, ...
+- ((64401d95-ff37-4c6a-8ed3-0aa0ae073837))
+-
+- ### Graphes / noeuds
+  id:: 64401d9d-6167-484c-aa15-8197906f7e5a
+	- palie avec des problèmes impossibles à résoudre avec une BDD relationnelle
+	- forme de graphe
+	- typique des réseaux sociaux
+	- Neo4j, JanusGraph, Amazon Neptune, ...
+- ((64401e14-c3dd-4e90-945c-e55626a53987))
+-
+- ### Documents
+  id:: 64401e1b-35c1-4a09-8baf-2b6a74fa08d9
+	- proche de clé-valeurs
+	- chaque valeur est représentée sous la forme d'un document
+	- données organisées de manière hiérarchique ([[JSON]])
+	- CouchDB, MongoDB, ...
+		- #### Highlights ++
+			- Modèle de données flexible
+			- Scale peu coûteux
+			- Requêtes rapides
+			- Facile à utiliser pour les Devs
+- ((64401eae-336f-4e5d-ac74-aef3dfa8d15b))
+-
+- **Attention**, la cohérence d'une donnée n'est pas forcément garantie dans le NoSQL.
+-
+- ### ACID (Atomicité - Cohérence - Isolation - Durabilité)
+- ((644020b1-1095-4fe0-a708-5f4e181e8f48))
+-
+- ### BASE (Basically Available - Soft-state - Eventually consistent)
+- ((644020c7-34f6-4b65-835c-4661a5d0661d))
+- ((644020d5-d781-4347-be78-dc9b54eb1112))
+-
+- ### Le thérème de CAP (Brewer)
+- 3 propriétés fondamentales caractérisent une DB
+	- Consistency (cohérence)
+		- 1 seul état visible peu importe le nbr de réplicas
+	- Availability (disponibilité)
+		- tant que le système tourne, la donnée doit être disponible
+	- Partition Tolerance (distribution)
+		- quel que soit le nbr de serveurs, toute requête doit fournir un résultat correct
+- > Dans toute base de données, vous ne pouvez respecter au plus que 2 propriétés parmi la cohérance, la disponibilité et la distribution.
+- ((64402298-0ac5-4803-9c82-b74fe5b2a7bd))
+- ### Triangle de CAP
+- ((644022b2-9e79-4b31-bd3d-a257118f9da6))

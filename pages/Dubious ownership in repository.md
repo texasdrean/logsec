@@ -1,0 +1,17 @@
+- ### If error msg :
+	- ```bash
+	  - fatal: detected dubious ownership in repository at '/srv/http/bolay.co/bloxool-simple'
+	    To add an exception for this directory, call:  
+	  - git config --global --add safe.directory /srv/http/bolay.co/bloxool-simple
+	  ```
+	-
+	- #### On /etc/gitconfig
+		- ```bash
+		  [safe]
+		  	directory = /pathToDirectory
+		  ```
+	-
+	- #### .git file should have this permissions
+		- > drwxrwxr-x  8 acdsn acdsn 4096 Apr 24 10:19 .git
+	- #### all other files / directorys
+		- > -rwxr-xr-x

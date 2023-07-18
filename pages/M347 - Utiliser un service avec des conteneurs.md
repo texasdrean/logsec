@@ -1,0 +1,165 @@
+- #conteneurs #architectures #monolithique #microservices #docker
+-
+- ## Architecture monolithique VS architecture de microservices
+	- ![Inf-M347_s_0100_SoftwareArchitecture.pdf](../assets/Inf-M347_s_0100_SoftwareArchitecture_1682268239978_0.pdf)
+	- #### -> Architecture monolithique
+	  id:: 64455523-9979-4375-a380-f835b2253a57
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2023-04-28T08:33:00.698Z
+	  card-last-reviewed:: 2023-04-24T08:33:00.700Z
+	  card-last-score:: 5
+		- Regroupe toutes les fonctionnalités d'une application en un seul et même système
+		- |                                 ***Avantages***                                 |                                                                 ***Inconvénients***                                                                 |   |   |   |
+		  |:-------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------:|--:|--:|--:|
+		  | Simple à développer, tester et déployer car tout est dans un seul système | Difficile à maintenir et faire évoluer à mesure que l'application devient plus grande                                                         |   |   |   |
+		  | Moins de complexité pour les petits projets                               | Risque de dépendance élevé entre les différentes parties de l'application, ce qui peut entraîner des conflits de version ou des temps d'arrêt |
+		- #### Exemples
+			- - Première versions de Photoshop, toutes les fonctionnalités étaient regroupées en un seul programme
+			- - Jeux vidéo traditionnels ( Mario Bros, Sonic, ... ) ont toutes les fonctionnalités du jeu, comme les graphismes, la musique, les contrôles et la logique du jeu dans un seul programme
+			- - Systèmes de gestion de contenu (CMS) tel que WordPress ou Drupal ont toutes les fonctionnalités dans un seul système
+	- #### -> Architecture de micro-services
+	  card-last-score:: 5
+	  card-repeats:: 1
+	  card-next-schedule:: 2023-04-28T08:33:08.254Z
+	  card-last-interval:: 4
+	  card-ease-factor:: 2.6
+	  card-last-reviewed:: 2023-04-24T08:33:08.254Z
+	  id:: 64463f2b-588a-485c-99b6-fccdc23693ec
+		- Divise une application en plusieurs services indépendants qui communiquent entre eux via des [[API]]
+		- |                                                           ***Avantages***                                                           |                                  ***Inconvénients***                                 |   |   |   |
+		  |:-----------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|--:|--:|--:|
+		  | Evolutivité horizontale, les services peuvent être ajoutés ou supprimés en fonction du besoin de l'app                        | Complexité accrue en raison de la nécessité de gérer de nombreux services      |   |   |   |
+		  | Indépendance entre les différents services, permettant une plus grande flexibilité en matière de développement et déploiement | Risque de surcharge du réseau en raison de la communication entre les services |   |   |   |
+		  | Permet une meilleure tolérance aux pannes                                                                                     | Plus difficile à tester, déployer et surveiller                                |   |   |   |
+		- #### Exemples
+			- - Netflix et Spotify gèrent leurs fonctionnalités de streaming et de gestion de compte utilisateur à l'aide d'une architecture de microservices. Leur services comme la recherche, les recommandations ou les notifications sont tous conçus pour être indépendants et évolutifs
+			- - Uber utilise des microservices pour gérer les différentes parties de son application, comme les systèmes de géolocalisation, de facturation et de notification
+	- > Le choix entre les 2 architectures dépend des besoins et des priorités de chaque projet
+-
+- ### Linus Torvalds VS Tanenbaum
+	- #### -> Linus Torvalds
+		- Créateur du noyau Linux, OS open source basé sur Unix.
+			- Le noyau Linux a une ((64455523-9979-4375-a380-f835b2253a57))
+	- #### -> Tanenbaum
+		- Créateur de MINIX, OS de type Unix conçu pour l'éducation et la recherche
+			- Le noyeau MINIX a une ((64463f2b-588a-485c-99b6-fccdc23693ec))
+-
+- ### Technologies et outils utilisés dans le cadre des architectures de micro-services
+	- Les technologies de conteneurisation telles que ***Docker*** et ***Kubernetes*** permettent de gérer des conteneurs isolés pour chaque service, facilitant ainsi le déploiement, l'orchestration et la gestion des applications de microservices
+	- Les [[API]] [[RESTful]] sont souvent utilisées pour la communication entre les services de micro-services car elles permettent de transférer des données entre les services de manière simple et cohérente
+	- Les langages de programmation tels que JAVA, Node.js, Python et Go sont souvent utilisés pour développer des micro-services
+	- Les [DB NoSQL](M165 - Utiliser des bases de données NoSQL) telles que MongoDB, Firebase, Cassandra et Couchbase sont souvent utilisées pour les micro-services car elles offrent une évolutivité horizontale et une meilleure flexibilité que les bases de données relationnelles
+	- Les outils de surveillance tels que Zabbix, Prometheus et Grafana sont utilisés pour surveiller la ***santé*** et les performances des services mais aussi pour faciliter la détection et le dépannage des erreurs
+-
+- ## Les conteneurs
+	- ![Inf-M347_s_0200_Containers.pdf](../assets/Inf-M347_s_0200_Containers_1682268204902_0.pdf)
+	- > Les conteneurs sont des espaces d'exécution dédiés à une application logicielle
+		- - Ils permettent d'isoler des logiciels et de les faire fonctionner de manière indépendante sur différents OS, matériels, réseaux et systèmes de stockage
+		- - Ils peuvent être déployés de manière transparente sur différents environnements de production
+	-
+	- ### Conteneur VS Machine Virtuelle
+		- |                                               ***Machines virtuelles***                                               |                                                            ***Conteneurs***                                                            |   |   |   |
+		  |:---------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|--:|--:|--:|
+		  | Virtualise toute la machine, jusqu'aux couches matérielles : BIOS - CPU - Mémoire - Carte réseau - Disque - Etc | Ne virtualise que les couches logicielles au-dessus de l'OS                                                                      |   |   |   |
+		  | Dispose de son propre OS                                                                                        | Contient toutes les dépendances nécessaires à l'exécution d'une application (exécutables /bin, bibliothèques systèmes /lib, etc) |   |   |   |
+		  |                                                                                                                 | Les ***bin*** et les ***lib*** qui sont essentiels aux applications sont répétés dans chaque container                           |   |   |   |
+		- ((644562bd-9c6f-4541-a9f2-b36371cc86e1))
+		- #### Avantages des VMs
+			- |                                                                             ***Portabilité***                                                                             |                                                                           ***Isolation***                                                                          |                                                                                                                                                                                                                                     ***Sécurité*** |   |   |
+			  |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|--:|--:|
+			  | Les VMs sont conçues pour être exécutées sur n'importe quelle plateforme de virtualisation, ce qui permet de déployer les applications de manière cohérente et prévisible | Les VMs offrent une isolation complète entre les différents environnements d'exécution, permettant d'éviter les conflits entre les applications et les dépendances | La sécurité est renforcée car les applications et les dépendances sont isolées les unes des autres et de l'environnement hôte. Les VMs offrent également une isolation au niveau matériel, ce qui empêche les attaques de s'étendre entre les VMs. |   |   |
+			  |                                                                                                                                                                           |                                                                                                                                                                    |                                                                                                                                                                                                                                                    |   |   |
+			  |                                                                                                                                                                           |                                                                                                                                                                    |                                                                                                                                                                                                                                                    |   |   |
+		- #### Avantages des conteneurs
+			- |                                                                                  ***Portabilité***                                                                                 |                                                                          ***Légèreté***                                                                          |                                                                       ***Isolation***                                                                      |                                                         ***Sécurité***                                                        |   |
+			  |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|--:|
+			  | Les conteneurs sont conçus pour être exécutés de manière cohérente sur n'importe quel environnement. Il est donc facile de les déployer ou de les déplacer en fonction des besoins | Les conteneurs partagent les ressources du système hôte plutôt que de nécessiter des ressources dédiées, ce qui les rend plus légers que les machines virtuelles | Chaque conteneur est isolé de l'environnement hôte et des autres conteneurs, ce qui permet d'éviter les conflits entre les applications et les dépendances | La sécurité est renforcée car les applications et les dépendances sont isolées les unes des autres et de l'environnement hôte |   |
+			  |                                                                                                                                                                                    |                                                                                                                                                                  |                                                                                                                                                            |                                                                                                                               |   |
+			  |                                                                                                                                                                                    |                                                                                                                                                                  |                                                                                                                                                            |                                                                                                                               |   |
+			- |                                                                                      ***Gestion des ressources***                                                                                      |                                                            ***Facilité de déploiement***                                                           |                                                     ***Scalabilité***                                                    |                                    ***DevOps***                                   |   |
+			  |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|--:|
+			  | Les conteneurs permettent une gestion efficace des ressources, en allouant seulement ce qui est nécessaire pour chaque application, ce qui permet d'optimiser les performances et de réduire les coûts | Les conteneurs sont facilement déployables, notamment grâce à la gestion de versions, permettant un déploiement rapide et fiable des applications. | Les conteneurs peuvent être facilement dupliqués pour permettre une montée en charge rapide et efficace des applications | Offre un environnement de développement similaire à l'environnement de production |   |
+			  |                                                                                                                                                                                                        |                                                                                                                                                    |                                                                                                                          |                                                                                   |   |
+			  |                                                                                                                                                                                                        |                                                                                                                                                    |                                                                                                                          |                                                                                   |   |
+		- > Le choix entre VMs et conteneurs dépend des besoins et contraintes spécifiques de chaque application / projet
+		- > Il est possible d'utiliser les deux technologies ensemble en utilisant les VMs pour l'isolation complète et les conteneurs pour l'efficacité des ressources et la portabilité
+-
+- ## Docker
+	- ![Inf-M347_s_0300_Docker.pdf](../assets/Inf-M347_s_0300_Docker_1682269757689_0.pdf)
+	- > Docker est un outil qui peut empaqueter une application et ses dépendances dans un conteneur isolé, qui pourra être exécuté sur n'importe quel serveur
+	- ### Concepts
+	- | ((64462e3c-5321-4d3b-b6a9-5b9a0f2b40a5)) | "Moteur" qui permet d'exécuter des conteneurs |
+	  | ((64462e3c-42b9-4ab8-a570-6866f77e1c0a)) | Modèle qui permet de créer des conteneurs |
+	  | ((64462e3c-853b-4699-81b6-a9256917120f)) | Instance en cours d'exécution d'une image Docker |
+	  | ((64462e3c-79f3-4aa1-b24c-8b204f9d8310)) | Permet la communication entre les différents conteneurs |
+	  | ((6446408d-d4ba-408d-8713-16b097e76056)) | Permet de sauvegarder des données d’un conteneur |
+	- ### Docker engine
+	  id:: 64462e3c-5321-4d3b-b6a9-5b9a0f2b40a5
+		- - Logiciel qui permet de créer, gérer et exécuter des conteneurs Docker sur une machine hôte. Il comprend le moteur de conteneurisation, les outils en ligne de commande, le Docker [[API]] et le [[Docker HUB]]
+		- - Disponible pour de multiples OS. Il permet aux développeurs de créer des applications portables pouvant s'exécuter sur différents environnements
+		- - Docker Engine permet aussi de créer des clusters de conteneurs pour gérer des applications à grande échelle et améliorer les performances
+	- ### Docker image
+	  id:: 64462e3c-42b9-4ab8-a570-6866f77e1c0a
+		- - Paquet léger, portable et autonome, contient tout ce dont une app a besoin pour s'exécuter
+			- - le code
+			- - les bibliothèques
+			- - les outils système
+			- - les fichiers de config
+		- - L'image est créée à partir d'un fichier ***Dockerfile*** qui définit la config de l'environnement de l'app et les dépendances requises
+		- - L'image peut être partagée et déployée sur différents environnements, rendant les apps plus portables et facilitant la collaboration entre les développeurs
+	- ### Conteneur Docker
+	  id:: 64462e3c-853b-4699-81b6-a9256917120f
+		- - Instance en cours d'exécution d'une image Docker
+		- - Permet de créer des environnements de dev et de prod reproductibles, garantit une exécution identique sur tous les environnements
+		- - Offre une isolation de l'environnement, les apps s'exécutent de façon isolée et sécurisée, sans avoir besoin de virtualisation complète ou de ressources matérielles dédiées
+	- ### Docker Network
+	  id:: 64462e3c-79f3-4aa1-b24c-8b204f9d8310
+		- - Permet aux conteneurs Docker de communiquer entre eux avec des ressources externes de manière sécurisée et efficace
+		- - Les réseaux Docker peuvent être utilisés pour isoler des conteneurs sur un même hôte, ou connecter des conteneurs à travers des hôtes sur un réseau distribué
+		- - Docker met à disposition 4 modes pour le paramétrage réseau :
+			- ((64464002-8253-4f92-8bce-86f28c30bb33))
+			- ((e7105b2e-d35a-48c0-b95d-fd793ef1522a))
+			- ((c413e4d8-df69-46e2-a14d-d2454c26cb5a))
+			- ((d1c33e03-7949-4903-92ff-4d8674e3d725))
+			- ((2890c3f6-db1c-427d-9ae1-fc34228d82a5))
+		- #### 1. Bridge (défaut)
+		  id:: 64464002-8253-4f92-8bce-86f28c30bb33
+			- - Les conteneurs se trouvant sur un même hôte / réseau peuvent communiquer entre eux avec un réseau bridge
+			  id:: 17391207-acd8-47ab-a2f6-878f1b5d0932
+			- - Un sous-réseau distinct est créé pour chaque réseau bridge et une adresse IP unique est attribuée à chaque conteneur se connectant au réseau
+			- - Chaque nouveau conteneur est automatiquement connecté à ce réseau sauf si un réseau personnalisé est spécifié (interface docker0)
+			- - Le réseau bridge est le type de réseau le plus couramment utilisé
+			- - Pour que les conteneurs sur ce réseau puissent communiquer ou être accessibles avec l'extérieur, il faut configurer un mappage de port
+		- ((644590e9-a516-4a26-88be-24ad436a855d))
+		-
+			- #### 2. Host
+			  id:: e7105b2e-d35a-48c0-b95d-fd793ef1522a
+				- Les conteneurs utilisent le même réseau que l'hôte Docker
+				- Les conteneurs n'ont pas d'adresse IP distincte et partagent l'adresse IP de l'hôte
+				- Plus performant que ((64464002-8253-4f92-8bce-86f28c30bb33)) , mais ne fournit pas d'isolation réseau
+			- ((644592d7-5160-4c75-94d0-0db7d41eeffd))
+			-
+			- #### 3. Overlay
+			  id:: c413e4d8-df69-46e2-a14d-d2454c26cb5a
+				- Permet de connecter des conteneurs se trouvant sur différents hôtes Docker
+				- Utilise une technologie de tunneling pour encapsuler les paquets de données et les transmettre entre les hôtes
+				- Gère de manière transparente le routage de chaque paquet vers et depuis le bon hôte et le bon conteneur
+			- ((6445939d-c2a8-4dbd-8991-85590f82d368))
+			- #### 4. Macvlan
+			  id:: d1c33e03-7949-4903-92ff-4d8674e3d725
+				- Permet aux conteneurs d'avoir une adresse IP propre sur le réseau local
+				- Permet aux conteneurs de se connecter à des réseaux existants en utilisant une adresse MAC virtuelle
+				- Parfois le meilleur choix lors de l'utilisation d'une app qui s'attend à être directement connectée au réseau physique, car le driver Macvlan permet d'attribuer une adresse MAC à un conteneur, le faisant apparaître comme un périphérique physique sur le réseau
+			- ((6445945c-97bf-47ef-93dc-d12f7ff764d2))
+			- #### 5. None
+			  id:: 2890c3f6-db1c-427d-9ae1-fc34228d82a5
+				- Désactive complètement le réseau pour le conteneur
+				- Si on souhaite désactiver toute communication interne et externe avec le conteneur (il gardera seulement l'interface loopback)
+	- ### Docker Volume
+	  id:: 6446408d-d4ba-408d-8713-16b097e76056
+		- Permet aux conteneurs Docker de stocker et d'accéder aux données
+		- Permet de créer des volumes persistants pouvant être partagés entre plusieurs conteneurs
+		- Permet d'isoler les données des conteneurs pour faciliter la sauvegarde
+		- Facilite le déploiement d'apps avec des exigences de stockages complexes, comme les DB et les apps à haute disponibilté

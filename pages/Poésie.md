@@ -1,0 +1,94 @@
+- ## Les vers et les strophes
+-
+- a) ***Le nom des vers ***
+	- 1 - monosyllabe                                  7 - heptasyllabe
+	- 2 - dissyllabe                                      8 - octosyllabe
+	- 3 - trisyllabe                                       9 - ennéasyllabe
+	- 4 - tétrasyllabe                                 10 - décasyllabe
+	- 5 - pentasyllabe                                11 - hendécasyllabe
+	- 6 - hexasyllabe                                 12 - alexandrin
+-
+- b) ***Le nom des strophes***
+	- 1 - monostriche                                  6 - sizain
+	- 2 - distique                                         7 - septain
+	- 3 - tercet                                            8 - huitain
+	- 4 - quatrain                                        9 - neuvain
+	- 5 - quintil                                           10 - dizain
+-
+- c) ***Le nombre de syllabes***
+	- - À la fin d'un vers, le ***e*** muet ne compte jamais
+	- - À l'intérieur du vers, le ***e*** compte si le mot suivant commence par une ***consonne*** ou un ***h*** aspiré. Autrement, il ne compte pas
+	- - Lorsque le ***e*** est suivi par un ***s*** marquant le pluriel et que le mot suivant commence par une ***voyelle*** ou un ***h*** muet, le ***e*** compte comme une syllabe prononcée
+- > Voyelles : a - e - i - o - u - y
+-
+- d) ***Synérèse et diérèse***
+- #### Synérèse
+	- - Deux voyelles successives se prononcent en une seule syllabe (lion, dieu, rien, ...)
+- #### Diérèse
+	- - Fait de prononcer ces voyelles en deux syllabes pour ***respecter le nombre de syllabes nécessaires au vers***
+-
+- e) ***Le rythme des vers***
+- Dans un alexandrin, les groupes de syllabes sont regroupées
+	- - ***césure à l'hémistiche*** : 2 groupes de 6 syllabes séparées par une forte pause
+	- - ***tétramètre*** : 4 groupes de 3 syllabes
+	- - ***trimètre*** : 3 groupes de 4 syllabes
+-
+- f) ***L'enjambement, le rejet et le contre-rejet***
+- #### Enjambement
+	- Modification du rythme du vers en commençant une phrase au milieu du vers.
+- #### Rejet
+	- Partie de phrase reportée dans le vers suivant
+- #### Contre-rejet
+	- Début de phrase placé en fin de vers
+- > Rejet et contre-rejet ont pour effet d'attirer l'attention sur des mots, expressions importantes en les mettant en relief
+-
+- ## Les rimes
+-
+- a) ***Nature des rimes***
+	- - ***Rime féminine*** : rime terminée par ***e*** muet
+	- - ***Rime masculine*** : rime non terminée par ***e*** muet
+- > La règle, dans la poésie classique : alterner entre rimes féminines et masculines
+-
+- b) ***Qualité des rimes***
+	- - ***Pauvres*** : un seul phonème commun (chanté-retiré, couteau-troupeau,...)
+	- - ***Suffisantes*** : deux phonèmes communs (têtu-sois-tu, maudit-dit,...)
+	- - ***Riches*** : trois phonèmes communs ou plus (glaive-lève, ivrogne-charogne,...)
+- > Il faut distinguer les rimes ***pour l'oreille*** (paraître-maître) des rimes ***pour l'oeil*** (pareil-oeil)
+-
+- c) ***Schéma des rimes***
+	- - ***Suivies ou plates*** : aabb / ccdd / ...
+	- - ***Croisées ou alternées*** : abab / cdcd / ...
+	- - ***Embrassées*** : abba / cddc / ...
+-
+- d) ***Assonances et allitérations***
+	- Rimes ont une fonction ***musicale***
+	- ***Assonances*** : répétition d'une même voyelle
+	- ***Allitérations*** : répétition d'une même consonne dans un vers, strophe ou ensemble du poème
+-
+- ## Les formes fixes
+-
+	- ***Le rondeau*** : Moyen-âge
+		- 12, 15 ou 16 vers
+		- 2 rimes seulement
+		- 1er vers repris sous forme de refrain à la fin des strophes 2 et 3
+	- ***La ballade*** : Médiévale aussi
+		- 3 strophes plus 1/2 strophe : ***l'envoi*** désignant le destinataire
+		- strophes carrées (huit octosyllabes, dix décasyllabes,...)
+		- chaque strophe se termine par un même ***vers refrain***
+	- ***Le sonnet*** : poésie provençale et italienne
+		- 14 vers (octosyllabes ou décasyllabes)
+		- deux ***quatrains*** et deux ***tercets***
+		- rimes ***embrassées*** et ***semblables*** dans les deux quatrains (abba abba)
+		- trois rimes nouvelles dans les tercets
+		- dernier vers constitue la ***chute*** (pointe inattendue)
+-
+- ## Du vers rimé au vers libre
+-
+- ***Vers libres*** se caractérisent par :
+	- disposition typographique originale
+	- absence de rimes dans la majorité des cas
+	- rythme particulier, irrégulier et imprévisible
+	- accent sur les répétitions
+	- jeux sur les sonorités (assonances / allitérations) pour créer des echos
+	- combinaison possible de niveaux de langues variées
+	- utilisation de figures de style pour souligner des images, analogies, rapprochements inattendus, oppositions, procédés d'amplification ou d'atténuation

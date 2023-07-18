@@ -1,0 +1,1 @@
+- > Hex is a package manager for the Erlang ecosystem

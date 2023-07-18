@@ -1,0 +1,1 @@
+- > Erlang is a programming language used to build massively scalable soft real-time systems with requirements on high availability. Without it, [[Elixir]] code has no virtual machine to run on.

@@ -1,0 +1,5 @@
+- Hello, I'm a block ! Reference me ! Embed me !
+	- I'm a child block !
+	- I'm another child block !
+- Hey, I'm another block !
+- {{embed [[How to take notes]]}}

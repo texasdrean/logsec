@@ -1,0 +1,5 @@
+- TODO Add vacations / disease
+- TODO Add a better display for each post
+- TODO Add managing account
+- TODO When creating a new post, if there is an error on submit, the values already written should stay on the form
+- TODO When creating a new post, if there is a `'`, it does not create it

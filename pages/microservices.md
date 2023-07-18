@@ -1,0 +1,1 @@
+- ![Inf-M347_s_0100_SoftwareArchitecture.pdf](../assets/Inf-M347_s_0100_SoftwareArchitecture_1682268230016_0.pdf)

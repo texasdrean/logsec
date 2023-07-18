@@ -1,0 +1,45 @@
+{
+    "classe": "MI-IN DEV 2",
+    "annee": 2023,
+    "telephone": null,
+    "active": true,
+    "titulaire": {
+      "nom": "Genolet",
+      "prenom": "Antoine"
+    },
+    "modules": {
+      "m165": {
+        "numero": "M165",
+        "description": "Utiliser des bases de données NoSQL",
+        "enseignant":{
+          "nom": "Moren",
+          "prenom": "Auxilio",
+          "email": "auxilio.moren@edu.vs.ch"
+        }
+      },
+      "m322": {
+        "numero": "M322",
+        "description": "Concevoir et implémenter des interfaces utilisateur",
+        "enseignant": {
+          "nom": "Fontannaz",
+          "prenom": "yann",
+          "email": "yann.fontannaz@edu.vs.ch"
+        }
+      }
+    },
+    "eleves": [
+      {
+        "prenom": "Jane",
+        "nom": "Doe"
+      },
+      {
+        "prenom": "Jinny",
+        "nom": "Roe"
+      },
+      {
+        "prenom": "Johnny",
+        "nom": "Roe"
+      }
+    ]
+}
+  
