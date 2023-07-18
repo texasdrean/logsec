@@ -1,3 +1,4 @@
 - ```elixir
-   mix docs --format html --open ```
+  mix docs --format html --open
+  ```
 -
