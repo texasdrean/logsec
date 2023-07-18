@@ -1,1 +1,2 @@
-- Testing git plugin on logseq
+- [[Testing]] git plugin on logseq
+- Testing auto commit
