@@ -25,7 +25,7 @@
 	  IO.write("Salut " <> name)
 	  ```
 - ----
-- #### Atom
+- #### Atom (unique)
 	- An ***atom*** type represents a fixed constant. The ***atom*** value is simply its own name.
 	  id:: 6448c94a-d81d-46fa-a2ab-70f84d0b624b
 	- ```elixir 
