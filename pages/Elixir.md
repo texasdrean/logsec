@@ -138,6 +138,46 @@
 	  end
 	  ```
 - ----
+- #### Dealing with maps inside a [[list]]
+- ```elixir 
+  iex(55)> inventory
+  [
+    %{
+      name: "Black Shirt",
+      price: 50,
+      quantity_by_size: %{s: 4, m: 1, l: 0, xl: 2}
+    },
+    %{
+      name: "White Shirt",
+      price: 40,
+      quantity_by_size: %{s: 3, m: 7, l: 8, xl: 4}
+    },
+    %{
+      name: "Yellow Shirt",
+      price: nil,
+      quantity_by_size: %{s: 1, m: 9, l: 12, xl: 2}
+    },
+    %{
+      name: "Green Shirt",
+      price: nil,
+      quantity_by_size: %{s: 0, m: 2, l: 1, xl: 5}
+    }
+  ]
+  iex(56)> Enum.filter(inventory, & &1.price == nil)
+  [
+    %{
+      name: "Yellow Shirt",
+      price: nil,
+      quantity_by_size: %{s: 1, m: 9, l: 12, xl: 2}
+    },
+    %{
+      name: "Green Shirt",
+      price: nil,
+      quantity_by_size: %{s: 0, m: 2, l: 1, xl: 5}
+    }
+  ]
+  ```
+- ----
 - ### A COMPLETER
 - ### Pattern matching
 	- https://thinkingelixir.com/course/pattern-matching/
