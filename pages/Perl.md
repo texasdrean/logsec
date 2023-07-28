@@ -1,6 +1,7 @@
 - **Perl** is a programming language created by Larry Wall in 1987 to easily process textual information. This interpreted language is inspired by the control and printing structures of the C language, but also by the scripting languages sed, awk and shell.
 -
 - ### Arrow operator
+	- Used for [dereferencing](http://www.perlmeme.org/howtos/using_perl/dereferencing.html) a Variable or a Method from a class or an object
 	- ```perl 
 	  #!/usr/local/bin/perl
 	  
@@ -31,4 +32,16 @@
 	  print $has2->{'c'}->[0],"\n";
 	  print "$has2->{'c'}->[0]\n"; # same
 	  ```
-	- #### Output
+	  
+	  ```bash 
+	  # Output
+	  4
+	  5
+	  7
+	  2
+	  1
+	  3
+	  3
+	  1
+	  1
+	  ```
