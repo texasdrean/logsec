@@ -1,6 +1,6 @@
 - **Perl** is a programming language created by Larry Wall in 1987 to easily process textual information. This interpreted language is inspired by the control and printing structures of the C language, but also by the scripting languages sed, awk and shell.
 -
-- ### Arrow operator
+- ### Arrow operator ( -> )
 	- Used for [dereferencing](http://www.perlmeme.org/howtos/using_perl/dereferencing.html) a Variable or a Method from a class or an object
 	- ```perl 
 	  #!/usr/local/bin/perl
@@ -44,4 +44,28 @@
 	  3
 	  1
 	  1
+	  ```
+-
+- ### Raspberry Pi GPIO pins
+	- [RPi::Pin](https://metacpan.org/pod/RPi::Pin) - Access and manipulate Raspberry Pi GPIO pins
+	- ```perl
+	  use RPi::Pin;
+	  use RPi::Const qw(:all);
+	   
+	  my $pin = RPi::Pin->new(5);
+	   
+	  $pin->mode(INPUT);
+	  $pin->write(LOW);
+	   
+	  $pin->set_interrupt(EDGE_RISING, 'main::pin5_interrupt_handler');
+	   
+	  my $num = $pin->num;
+	  my $mode = $pin->mode;
+	  my $state = $pin->read;
+	   
+	  print "pin number $num is in mode $mode with state $state\n";
+	   
+	  sub pin5_interrupt_handler {
+	      print "in interrupt handler\n";
+	  }
 	  ```
