@@ -214,5 +214,5 @@
 			- - 2nd argument : schema module
 			- - 3th argument : schema table name (plural of schema module)
 			- - tables names
-	- ``
-		-
+	- `mix docs --format html --open`
+		- Open project docs

@@ -46,8 +46,8 @@
 	  1
 	  ```
 -
-- ### Raspberry Pi GPIO pins
-	- [RPi::Pin](https://metacpan.org/pod/RPi::Pin) - Access and manipulate Raspberry Pi GPIO pins
+- ### Raspberry Pi [[GPIO]] pins
+	- [RPi::Pin](https://metacpan.org/pod/RPi::Pin) - Access and manipulate Raspberry Pi [[GPIO]] pins
 	- ```perl
 	  use RPi::Pin;
 	  use RPi::Const qw(:all);
