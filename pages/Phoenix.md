@@ -216,3 +216,7 @@
 			- - tables names
 	- `mix docs --format html --open`
 		- Open project docs
+- -----
+- # Tips
+- `__MODULE__`
+	- returns the module name for more flexible code
