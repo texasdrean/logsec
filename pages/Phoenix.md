@@ -1,7 +1,7 @@
-- Cheat Sheet
+## Cheat Sheet
 	- https://devhints.io/phoenix
-- > `Phoenix` is a web development framework written in [[Elixir]] which implements the server-side [[MVC]] pattern
-- ### Prerequisites
+	- > `Phoenix` is a web development framework written in [[Elixir]] which implements the server-side ((64d2313f-9a80-46ac-9609-c3de14989a40)) pattern
+- ## Prerequisites
 	- [[Elixir]]
 		- ```bash
 		  # On MacOs
@@ -15,13 +15,12 @@
 		- is generally automatically installed when installing [[Elixir]]. If need to install it manually :
 			- [Install erlang](https://elixir-lang.org/install.html#installing-erlang)
 	- A Database (not mandatory, it depends on what the application will be for)
-- ----
-- Once the prerequisites are installed, we install the Phoenix application generator
+- Once the prerequisites are installed, we install the [[Phoenix]] application generator
 	- ```bash 
 	  mix archive.install hex phx_new
 	  ```
 - ----
-- ### Up and Running
+- ## Up and Running
 	- ```bash 
 	  # To boostrap the Phoenix application
 	  mix phx.new *app_name*
@@ -203,9 +202,7 @@
 			- 1. `init/1` which initializes any arguments or options to be passed to [`call/2`](https://hexdocs.pm/plug/1.14.0/Plug.html#c:call/2)
 			  2. `call/2` which carries out the connection transformation. [`call/2`](https://hexdocs.pm/plug/1.14.0/Plug.html#c:call/2) is just a function plug that we saw earlier
 -
-- # Commands
-	- `iex -S mix phx.server`
-		- start [[Phoenix]] server inside iex
+- ## [[Commands]]
 	- `mix ecto.gen.migration create_users`
 		- Generates a migration to be modified
 	- `mix phx.gen.html Accounts User users name:string age:integer `
@@ -217,9 +214,22 @@
 	- `mix docs --format html --open`
 		- Open project docs
 - -----
-- ## Model
-  id:: 64d2302b-7a31-499f-8834-5cf5ccf0792c
+- ## Phoenix-MVC
+  id:: 64d2313f-9a80-46ac-9609-c3de14989a40
+	- `Model` -> Schema + Context
+	- `View` -> View + Template
+	- `Controller` -> Router + Controller
 	-
+	- ### Model
+	  id:: 64d2302b-7a31-499f-8834-5cf5ccf0792c
+		- `Schema` -> create a data structure related to a table (defined on migrations), and define functions for validations using a changeset
+		- `Context` -> a context uses a schema and a Repo to define functions and pipelines to transform and persist data
+	- ### View
+		- `View` -> defines specific functions for parsing and filtering data to be used from a Template, and will render a specified Template
+		- `Template` -> the actual HTML code and front-end logic
+	- ### Controller
+		- `Router` -> receive request and select correct controller
+		- `Controller` -> the controller will access the context asking for functions and pipelines, and will ask view to render the correct related page
 - -----
 - # Tips
 - `__MODULE__`
