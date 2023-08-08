@@ -220,6 +220,7 @@
 	- `View` -> View + Template
 	- `Controller` -> Router + Controller
 	-
+	- `Migrations` -> defines a table structure for a database, here you can create/modify/delete a table, add fields and unique indexes
 	- ### Model
 	  id:: 64d2302b-7a31-499f-8834-5cf5ccf0792c
 		- `Schema` -> create a data structure related to a table (defined on migrations), and define functions for validations using a changeset
