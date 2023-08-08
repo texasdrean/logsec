@@ -63,7 +63,7 @@
 			- `config/runtime.exs` - is executed and it is the best place to read secrets and other dynamic configuration
 		- `deps` - contains all `Mix` dependencies
 		- `lib` - holds the application source code. Is broken into two subdirectories
-			- `lib/hello` - host all business logic and business domain. It typically interacts with the database. It is the Model on the [[MVC]] architecture
+			- `lib/hello` - host all business logic and business domain. It typically interacts with the database. It is the ((64d2302b-7a31-499f-8834-5cf5ccf0792c)) on the [[MVC]] architecture
 			- `lib/hello_web` - responsible for exposing the business domain to the world, through a web application. It hols the View and the Controller from [[MVC]]
 		- `priv` - keeps all the ressources that are necessary in production but are not directly part of the source code like `databases scripts`, `translation files`, `images`, and more. Generated assets, created from files in the `assets` directory, are placed in `priv/static/assets` by default
 		- `test` - directory with all of application tests. It often mirrors the same structure found in `lib`
@@ -216,6 +216,10 @@
 			- - tables names
 	- `mix docs --format html --open`
 		- Open project docs
+- -----
+- ## Model
+  id:: 64d2302b-7a31-499f-8834-5cf5ccf0792c
+	-
 - -----
 - # Tips
 - `__MODULE__`
