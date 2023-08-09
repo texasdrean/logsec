@@ -232,6 +232,9 @@
 		- `Router` -> receive request and select correct controller
 		- `Controller` -> the controller will access the context asking for functions and pipelines, and will ask view to render the correct related page
 - -----
+- ## Many to many relations
+	-
+- -----
 - # Tips
 - `__MODULE__`
 	- returns the module name for more flexible code
