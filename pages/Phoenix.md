@@ -234,7 +234,7 @@
 - -----
 - ## Many to many associations
 	- [Undersand many to many associations](https://dev.to/ricardoruwer/many-to-many-associations-in-elixir-and-phoenix-21pm)
-	- https://hexdocs.pm/ecto/associations.html#many-to-many)
+	- [Examples from the official documentation](https://hexdocs.pm/ecto/associations.html#many-to-many)
 - -----
 - # Tips
 - `__MODULE__`
