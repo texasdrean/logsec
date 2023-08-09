@@ -232,7 +232,7 @@
 		- `Router` -> receive request and select correct controller
 		- `Controller` -> the controller will access the context asking for functions and pipelines, and will ask view to render the correct related page
 - -----
-- ## Many to many relations
+- ## Many to many associations
 	- [Undersand many to many associations](https://dev.to/ricardoruwer/many-to-many-associations-in-elixir-and-phoenix-21pm)
 - -----
 - # Tips
