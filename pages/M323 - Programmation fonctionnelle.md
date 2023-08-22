@@ -1,13 +1,14 @@
-- La programmation fonctionnelle est un paradigme de programmation qui insiste sur l'évaluation d'appel de fonctions plutôt que sur l'utilisation de variables et de blocs imbriqués
+- La programmation fonctionnelle est un paradigme de programmation qui insiste sur l'évaluation d'appel de `fonctions` plutôt que sur l'utilisation de variables et de blocs imbriqués
 - Les fonctions fonctionnelles sont pures, elles ne modifient pas l'état du monde extérieur rendant les programmes fonctionnels plus faciles à comprendre, à tester et à deboguer
 - ----
 - `Avantages`
 	- - Programmes plus faciles à comprendre et à maintenir que les programmes impératifs
 	- - Programmes moins susceptibles d'avoir des bugs
 	- - Programmes plus faciles à paralléliser et à distribuer (cache)
-- Différence prog `fonctionnelle` et `impérative`
+- Différence programmation `fonctionnelle` et `impérative`
 	- La programmation impérative traite les calculs comme une séquence d'instructions qui modifient l'état du monde extérieur
 	- La programmation fonctionnelle traite les calculs comme des évaluations de fonctions qui ne modifient pas l'état du monde extérieur
+- ----
 - `Termes`
 	- ![Screenshot 2023-08-22 at 14.38.28.png](../assets/Screenshot_2023-08-22_at_14.38.28_1692708080295_0.png)
 - `Principaux langages`
