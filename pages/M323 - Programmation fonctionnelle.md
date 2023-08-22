@@ -23,5 +23,5 @@
 	- Avantages:
 		- - `Facilité de test` -> faciles à tester car comportement bien défini
 		- - `Facilité de débogage` -> faciles à déboguer car n'ont pas d'effet de bord
-		- - `Parallélisation` -> faciles à paralléliser car
-		- - `Fiabilité`
+		- - `Parallélisation` -> faciles à paralléliser car ne dépendent pas de l'état du monde extérieur
+		- - `Fiabilité` -> plus fiables car ne peuvent pas provoquer d'erreurs dues à des effets de bord
