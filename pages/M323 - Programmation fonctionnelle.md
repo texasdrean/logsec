@@ -6,4 +6,5 @@
 	- - Programmes moins susceptibles d'avoir des bugs
 	- - Programmes plus faciles à paralléliser et à distribuer (cache)
 - Différence prog `fonctionnelle` et `impérative`
+	- La programmation impérative traite les calculs comme une séquence d'instructions qui modifient l'état du monde extérieur
 	-
