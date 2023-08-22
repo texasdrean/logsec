@@ -2,4 +2,6 @@
 - Les fonctions fonctionnelles sont pures, elles ne modifient pas l'état du monde extérieur rendant les programmes fonctionnels plus faciles à comprendre, à tester et à deboguer
 - ----
 - `Avantages`
-	- Programmes plus faciles à comprendre
+	- - Programmes plus faciles à comprendre et à maintenir que les programmes impératifs
+	- - Programmes moins susceptibles d'avoir des bugs
+	- - Programmes plus faciles à paralléliser et
