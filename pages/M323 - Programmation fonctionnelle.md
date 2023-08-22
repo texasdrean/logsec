@@ -15,4 +15,4 @@
 	- ![Screenshot 2023-08-22 at 14.38.45.png](../assets/Screenshot_2023-08-22_at_14.38.45_1692708101582_0.png)
 - ----
 - ### Fonction pure
-	-
+	- Ne modifie pas l'état du monde extérieur -> renverra toujours le même résultat
