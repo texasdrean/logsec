@@ -20,4 +20,7 @@
 		- - `Sans effet secondaire` -> ne modifie pas une variable globale, d'instance ou locale
 		- - `Déterministe` -> renverra toujours le même résultat avec les mêmes arguments
 		- - `Transparence référentielle` -> peut être remplacée par son résultat sans changer le comportement du programme
-	-
+	- Avantages:
+		- - `Facilité de test`
+		- - `Facilité de débogage`
+		- - `Pa
