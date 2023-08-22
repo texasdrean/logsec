@@ -5,4 +5,5 @@
 	- - Programmes plus faciles à comprendre et à maintenir que les programmes impératifs
 	- - Programmes moins susceptibles d'avoir des bugs
 	- - Programmes plus faciles à paralléliser et à distribuer (cache)
--
+- Différence prog `fonctionnelle` et `impérative`
+	-
