@@ -1,1 +1,2 @@
-- La programmation fonctionnelle est un
+- La programmation fonctionnelle est un paradigme de programmation qui insiste sur l'évaluation d'appel de fonctions plutôt que sur l'utilisation de variables et de blocs imbriqués
+-
