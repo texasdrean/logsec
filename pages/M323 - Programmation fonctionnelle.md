@@ -22,6 +22,6 @@
 		- - `Transparence référentielle` -> peut être remplacée par son résultat sans changer le comportement du programme
 	- Avantages:
 		- - `Facilité de test` -> faciles à tester car comportement bien défini
-		- - `Facilité de débogage` ->
-		- - `Parallélisation`
+		- - `Facilité de débogage` -> faciles à déboguer car n'ont pas d'effet de bord
+		- - `Parallélisation` -> faciles à paralléliser car
 		- - `Fiabilité`
