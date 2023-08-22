@@ -17,4 +17,5 @@
 - ### Fonction pure
 	- Ne modifie pas l'état du monde extérieur -> renverra toujours le même résultat avec les mêmes arguments
 	- Pour qu'une fonction soit pure, elle doit respecter 3 conditions:
-		- - Sans effet
+		- - Sans effet secondaire -> ne modifie pas une variable globale, d'instance ou locale
+		- - Déterm
