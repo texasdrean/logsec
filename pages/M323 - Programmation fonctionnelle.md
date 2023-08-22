@@ -7,4 +7,5 @@
 	- - Programmes plus faciles à paralléliser et à distribuer (cache)
 - Différence prog `fonctionnelle` et `impérative`
 	- La programmation impérative traite les calculs comme une séquence d'instructions qui modifient l'état du monde extérieur
-	-
+	- La programmation fonctionnelle traite les calculs comme des évaluations de fonctions qui ne modifient pas l'état du monde extérieur
+-
