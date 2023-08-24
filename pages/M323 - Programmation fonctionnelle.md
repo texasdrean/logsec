@@ -1,6 +1,7 @@
 - La programmation fonctionnelle est un paradigme de programmation qui insiste sur l'évaluation d'appel de `fonctions` plutôt que sur l'utilisation de variables et de blocs imbriqués
 - Les fonctions fonctionnelles sont pures, elles ne modifient pas l'état du monde extérieur rendant les programmes fonctionnels plus faciles à comprendre, à tester et à déboguer
 - [Cheat sheet](https://ingin.fr/Cheat_sheet_Functional_Programming.pdf)
+- [Functional programming in Javascript](https://ingin.fr/blog/2021/02/13/programmation-fonctionnelle-en-javascript)
 -
 - ----
 - `Avantages`
