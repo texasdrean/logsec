@@ -2,7 +2,7 @@
 - Les fonctions fonctionnelles sont pures, elles ne modifient pas l'état du monde extérieur rendant les programmes fonctionnels plus faciles à comprendre, à tester et à déboguer
 - [Cheat sheet](https://ingin.fr/Cheat_sheet_Functional_Programming.pdf)
 - [Functional programming in Javascript](https://ingin.fr/blog/2021/02/13/programmation-fonctionnelle-en-javascript)
--
+- [Functionnal programming in Python](https://docs.python.org/fr/3/howto/functional.html#built-in-functions)
 - ----
 - `Avantages`
 	- - Programmes plus faciles à comprendre et à maintenir que les programmes impératifs
