@@ -30,4 +30,5 @@
 		- - `Fiabilité` -> plus fiables car ne peuvent pas provoquer d'erreurs dues à des effets secondaires
 - ### Récursivité
 	- La récursivité est une technique consistant
-	- `Le pas récursif` est la partie de l'algorithme qui appelle la fonction elle-même.
+	- Le `pas récursif` est la partie de l'algorithme qui appelle la fonction elle-même. Il est responsable de résoudre le problème en général.
+	- La `clause de finitude`
