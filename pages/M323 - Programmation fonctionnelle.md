@@ -28,4 +28,5 @@
 		- - `Facilité de débogage` -> faciles à déboguer car n'ont pas d'effet secondaire
 		- - `Parallélisation` -> faciles à paralléliser car ne dépendent pas de l'état du monde extérieur
 		- - `Fiabilité` -> plus fiables car ne peuvent pas provoquer d'erreurs dues à des effets secondaires
-	-
+- ### Récursivité
+	- La récursivité est une technique consistant à
