@@ -1,0 +1,2 @@
+- Le `langage dynamique` consiste à laisser la machine réaliser l'opération de typage lors de l'exécution du code
+- Le `langage statique` consiste à effectuer l'analyse des types en amont (en général, lors de la compilation du programme)
