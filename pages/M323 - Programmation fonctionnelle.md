@@ -64,4 +64,6 @@
 	- La curryfication permet de:
 		- - rendre le code plus lisible et plus facile à comprendre
 		- - réutiliser des fonctions de manière plus efficace
-		- -
+		- - créer des fonctions plus flexibles
+	- ```python 
+	  ```
