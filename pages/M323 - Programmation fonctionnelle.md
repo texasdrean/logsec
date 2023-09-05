@@ -47,7 +47,7 @@
 	      return 1
 	    # Pas récursif
 	    else:
-	  
+	      return n * factorial(n - 1)
 	  ```
 - ### Fonctions lambda
 	- Une expression lambda est une fonction anonyme, déclarée sans être associée à un nom.
