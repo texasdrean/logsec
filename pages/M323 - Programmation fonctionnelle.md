@@ -66,4 +66,15 @@
 		- - réutiliser des fonctions de manière plus efficace
 		- - créer des fonctions plus flexibles
 	- ```python 
+	  # Fonction non currifiée
+	  def add(a, b):
+	    return a + b
+	  
+	  # Fonction currifiée
+	  def add_one(a):
+	    return add(a, 1)
+	  
+	  # Utilisation
+	  print(add_one(5)) # 6
 	  ```
+-
