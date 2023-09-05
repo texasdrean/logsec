@@ -60,4 +60,4 @@
 	  print(sum(1, 2)) # 3
 	  ```
 - ### Curryfication
-	- Lors de la curryfication, la fonction de base
+	- Lors de la curryfication, la fonction de base n'est pas supprimée
