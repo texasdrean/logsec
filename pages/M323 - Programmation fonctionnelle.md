@@ -38,7 +38,7 @@
 	- C'est un outil puissant pouvant être utilisé dans de nombreux contextes différents, notamment:
 		- - rendre le code plus concis et lisible
 		- - passer des fonctions en tant qu'arguments à d'autres fonctions
-		- - Créer des fonctions anonymes qui seront utilisées qu'
+		- - Créer des fonctions anonymes qui seront utilisées 1x
 	- ```python 
 	  # Déclaration d'une fonction lambda
 	  sum = lambda a, b: a + b
@@ -46,4 +46,3 @@
 	  # Appel de la fonction lambda
 	  print(sum(1, 2)) # 3
 	  ```
-	-
