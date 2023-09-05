@@ -37,7 +37,8 @@
 	- Une expression lambda est une fonction anonyme, déclarée sans être associée à un nom.
 	- C'est un outil puissant pouvant être utilisé dans de nombreux contextes différents, notamment:
 		- - rendre le code plus concis et lisible
-		- - faciliter le passage de fonctions en tant qu'arguments à d'autres fonctions.
+		- - passer des fonctions en tant qu'arguments à d'autres fonctions
+		- - Créer des fonctions anonymes qui seront utilisées qu'
 	- ```python 
 	  # Déclaration d'une fonction lambda
 	  sum = lambda a, b: a + b
