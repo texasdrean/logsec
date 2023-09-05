@@ -29,11 +29,8 @@
 		- - `Parallélisation` -> faciles à paralléliser car ne dépendent pas de l'état du monde extérieur
 		- - `Fiabilité` -> plus fiables car ne peuvent pas provoquer d'erreurs dues à des effets secondaires
 	- ```python 
-	  def factorial(n):
-	    if n == 0:
-	      return 1
-	    else:
-	      return n * factorial(n - 1)
+	  def sum(a, b):
+	    return a + b
 	  ```
 - ### Récursivité
 	- [Recursion.vercel.app](recursion.vercel.app)
