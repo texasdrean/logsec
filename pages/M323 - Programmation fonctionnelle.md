@@ -61,4 +61,7 @@
 	  ```
 - ### Curryfication
 	- La curryfication consiste à transformer une fonction qui prend plusieurs arguments en une séquence de fonctions, chacune avec 1 seul argument -> ça permet de diviser une fonction en plusieurs fonctions plus petties et plus spécialisées
-	- La curryfication
+	- La curryfication permet de:
+		- - rendre le code plus lisible et plus facile à comprendre
+		- - réutiliser des fonctions de manière plus efficace
+		- -
