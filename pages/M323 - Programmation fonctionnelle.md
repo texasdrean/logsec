@@ -60,4 +60,5 @@
 	  print(sum(1, 2)) # 3
 	  ```
 - ### Curryfication
-	- La curryfication consiste à transformer une fonction qui prend plusieurs arguments en une séquence de fonctions, chacune avec 1 seul argument -> ça permet de diviser une fonction en plusieurs fonctions plus petties
+	- La curryfication consiste à transformer une fonction qui prend plusieurs arguments en une séquence de fonctions, chacune avec 1 seul argument -> ça permet de diviser une fonction en plusieurs fonctions plus petties et plus spécialisées
+	- La curryfication
