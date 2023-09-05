@@ -35,4 +35,4 @@
 	- La `clause de finitude` est la partie de l'algorithme indiquant à la fonction d'arrêter de s'appeler elle-même. Cela est nécessaire pour éviter une boucle infinie.
 - ### Fonctions lambda
 	- Une expression lambda est une fonction anonyme, déclarée sans être associée à un nom.
-	- C'est un outil puissant pouvant être utilisé dans de nombreux contextes différents. Permettant de rendre le code plus concis et lisible.
+	- C'est un outil puissant pouvant être utilisé dans de nombreux contextes différents. Permettant de rendre le code plus concis et lisible et facili
