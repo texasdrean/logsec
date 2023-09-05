@@ -34,4 +34,5 @@
 	- Le `pas récursif` est la partie de l'algorithme qui appelle la fonction elle-même. Il est responsable de résoudre le problème en général.
 	- La `clause de finitude` est la partie de l'algorithme indiquant à la fonction d'arrêter de s'appeler elle-même. Cela est nécessaire pour éviter une boucle infinie.
 - ### Fonctions lambda
-	- Une
+	- Une expression lambda est une fonction anonyme, déclarée sans être associée à un nom.
+	- C'est un outil puissant pouvant
