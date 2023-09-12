@@ -95,5 +95,13 @@
 - ### Fonctions d'ordre supérieur
 	- Fonction qui peut prendre d'autres fonctions en arguments ou retourner une autre fonction. C'est un concept important en programmation fonctionnelle, utilisées pour rendre le code plus concis et lisible.
 	- ```python 
+	  def apply_function(function, number):
+	    return function(number)
+	  
+	  def square(number):
+	    return number * number
+	  
+	  print(apply_function(square, 5)) # 26
 	  ```
+	-
 	-
