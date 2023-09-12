@@ -78,8 +78,9 @@
 	  print(add_one(5)) # 6
 	  ```
 - ### Fonctions de première classe
-	- Fonction qui peut être traitée comme n'importe quelle autre valeur. Càd qu'elle peut être stockée dans une variable
+	- Fonction qui peut être traitée comme n'importe quelle autre valeur. Càd qu'elle peut être stockée dans une variable, passée en tant qu'argument à une autre fonction, ou être retournée par une autre fonction
 	- ```python 
+	  
 	  ```
 - ### Fonctions d'ordre supérieur
 	- Fonction qui peut prendre d'autres fonctions en arguments ou retourner une autre fonction. C'est un concept important en programmation fonctionnelle, utilisées pour rendre le code plus concis et lisible.
