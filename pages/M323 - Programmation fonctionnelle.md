@@ -77,4 +77,5 @@
 	  # Utilisation
 	  print(add_one(5)) # 6
 	  ```
--
+- ### Fonctions de première classe
+	- Fonction qui peut être traitée comme n'importe quelle autre valeur.
