@@ -105,7 +105,9 @@
 	  ```
 	- #### Méthode `map`
 		- ```python 
-		  # Prend une fonction et une séquence en entrée et renvoie une nouvelle séquence contenant le résultat de l'application de la fonction à chaque élément de la séquence
+		  # Prend une fonction et une séquence en entrée et renvoie une nouvelle séquence
+		  # contenant le résultat de l'application de la fonction à chaque élément de
+		  # la séquence
 		  list(map(function, sequence))
 		  ```
-	-
+	- #### Méthode
