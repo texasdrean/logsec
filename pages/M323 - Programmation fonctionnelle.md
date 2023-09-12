@@ -105,5 +105,7 @@
 	  ```
 	- #### Méthode `map`
 		- ```python 
+		  # Prend une fonction et une séquence en entrée et renvoie 
+		  list(map(function, sequence))
 		  ```
 	-
