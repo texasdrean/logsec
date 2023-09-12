@@ -108,6 +108,12 @@
 		  # Prend une fonction et une séquence en entrée et renvoie une nouvelle séquence
 		  # contenant le résultat de l'application de la fonction à chaque élément de
 		  # la séquence
-		  list(map(function, sequence))
+		  numbers = [1, 2, 3, 4, 5]
+		  
+		  squares = list(map(lambda number: number * number, numbers))
+		  
+		  print(squares) # [1, 4, 9, 16, 25]
 		  ```
-	- #### Méthode
+	- #### Méthode `filter`
+		- ```python
+		   ```
