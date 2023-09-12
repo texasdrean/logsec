@@ -126,4 +126,5 @@
 		  print(even_numbers) # [2, 4]
 		  ```
 	- #### Méthode `reduce`
-		-
+		- ```python 
+		  ```
