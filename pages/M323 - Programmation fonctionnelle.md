@@ -80,4 +80,4 @@
 - ### Fonctions de première classe
 	- Fonction qui peut être traitée comme n'importe quelle autre valeur.
 - ### Fonctions d'ordre supérieur
-	- Fonction qui peut prendre d'autres fonczions
+	- Fonction qui peut prendre d'autres fonctions en arguments ou retourner une autre fonction. C'est un concept important en programmation
