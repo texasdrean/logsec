@@ -103,5 +103,7 @@
 	  
 	  print(apply_function(square, 5)) # 26
 	  ```
-	-
+	- #### Méthode `map`
+		- ```python 
+		  ```
 	-
