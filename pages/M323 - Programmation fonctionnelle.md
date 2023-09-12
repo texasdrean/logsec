@@ -127,4 +127,16 @@
 		  ```
 	- #### Méthode `reduce`
 		- ```python 
+		  # Prend une fonction et une séquence en entrée et renvoie une valeur unique
+		  # obtenue en appliquant la fonction de manière récursive à la séquence.
+		  # L'argument initial_value est la valeur initiale de l'accumulateur
+		  # La fonction accumulator est appelée à chaque itération de la boucle. Elle doit
+		  # renvoyer la valeur de l'accumulateur après l'application de la fonction à 
+		  # l'élément actuel de la séquence
+		  import functools
+		  
+		  sum = functools.reduce(lambda accumulator, element: accumulator + element, numbers, 0)
+		  
+		  print(sum) # 15
 		  ```
+	-
