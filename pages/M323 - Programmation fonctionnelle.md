@@ -78,7 +78,7 @@
 	  print(add_one(5)) # 6
 	  ```
 - ### Fonctions de première classe
-	- Fonction qui peut être traitée comme n'importe quelle autre valeur.
+	- Fonction qui peut être traitée comme n'importe quelle autre valeur. Càd qu'elle peut être stockée dans une variable
 	- ```python 
 	  ```
 - ### Fonctions d'ordre supérieur
