@@ -79,3 +79,5 @@
 	  ```
 - ### Fonctions de première classe
 	- Fonction qui peut être traitée comme n'importe quelle autre valeur.
+- ### Fonctions d'ordre supérieur
+	- Fonction qui peut prendre d'autres fonczions
