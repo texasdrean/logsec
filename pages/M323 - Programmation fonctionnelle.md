@@ -116,4 +116,14 @@
 		  ```
 	- #### Méthode `filter`
 		- ```python
-		   ```
+		  # Prend une fonction et une séquence en entrée et renvoie une nouvelle séquence
+		  # contenant uniquement les éléments de la séquence pours lesquels la fonction
+		  # renvoie la valeur true
+		  numbers = [1, 2, 3, 4, 5]
+		  
+		  even_numbers = list(filter(lambda number: number % 2 == 0, numbers))
+		  
+		  print(even_numbers) # [2, 4]
+		  ```
+	- #### Méthode `reduce`
+		-
