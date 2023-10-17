@@ -3,3 +3,6 @@
 - TODO Add managing account
 - TODO When creating a new post, if there is an error on submit, the values already written should stay on the form
 - TODO When creating a new post, if there is a `'`, it does not create it
+- TODO Add Remarks when creating a new post
+- TODO Add a TODO sector
+-
