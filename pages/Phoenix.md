@@ -239,6 +239,9 @@
 	  logseq.order-list-type:: number
 	- `handle_info/2` must be used for all other messages a server may receive that are not sent via [`GenServer.call/2`](https://hexdocs.pm/elixir/1.16/GenServer.html#call/2) or [`GenServer.cast/2`](https://hexdocs.pm/elixir/1.16/GenServer.html#cast/2), including regular messages sent with [`send/2`](https://hexdocs.pm/elixir/1.16/Kernel.html#send/2). The monitoring `:DOWN` messages are an example of this.
 	  logseq.order-list-type:: number
+	- #### Cheat sheet
+		- https://elixir-lang.org/downloads/cheatsheets/gen-server.pdf
+	-
 - -----
 - ## Many to many associations
 	- [Undersand many to many associations](https://dev.to/ricardoruwer/many-to-many-associations-in-elixir-and-phoenix-21pm)
