@@ -231,6 +231,14 @@
 	- ### Controller
 		- `Router` -> receive request and select correct controller
 		- `Controller` -> the controller will access the context asking for functions and pipelines, and will ask view to render the correct related page
+- ----
+- ## call, cast or info ?
+	- `handle_call/3` must be used for synchronous requests. This should be the default choice as waiting for the server reply is a useful back-pressure mechanism.
+	  logseq.order-list-type:: number
+	- `handle_cast/2` must be used for asynchronous requests, when you don't care about a reply. A cast does not guarantee the server has received the message and, for this reason, should be used sparingly. For example, the `create/2` function we have defined in this chapter should have used `call/2`. We have used `cast/2` for didactic purposes.
+	  logseq.order-list-type:: number
+	- `handle_info/2` must be used for all other messages a server may receive that are not sent via [`GenServer.call/2`](https://hexdocs.pm/elixir/1.16/GenServer.html#call/2) or [`GenServer.cast/2`](https://hexdocs.pm/elixir/1.16/GenServer.html#cast/2), including regular messages sent with [`send/2`](https://hexdocs.pm/elixir/1.16/Kernel.html#send/2). The monitoring `:DOWN` messages are an example of this.
+	  logseq.order-list-type:: number
 - -----
 - ## Many to many associations
 	- [Undersand many to many associations](https://dev.to/ricardoruwer/many-to-many-associations-in-elixir-and-phoenix-21pm)
