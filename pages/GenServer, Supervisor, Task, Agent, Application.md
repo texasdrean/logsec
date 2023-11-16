@@ -1,15 +1,15 @@
 - 1. **`GenServer` (Generic Server):**
-	- **Rôle :** Un module Elixir qui facilite la création de serveurs génériques, c'est-à-dire des processus qui peuvent maintenir un état et répondre à des requêtes de manière asynchrone.
-		- **Utilisation :** Utile pour implémenter des services, des agents d'état, ou toute autre logique où vous avez besoin de maintenir un état et de répondre à des requêtes.
+	- **Rôle :** Un module [[Elixir]] qui facilite la création de serveurs génériques, c'est-à-dire des processus qui peuvent maintenir un état et répondre à des requêtes de manière asynchrone.**
+	- **Utilisation :** Utile pour implémenter des services, des agents d'état, ou toute autre logique où vous avez besoin de maintenir un état et de répondre à des requêtes.
 - 2. **`Supervisor` (Superviseur) :**
-	- **Rôle :** Un module Elixir qui gère le cycle de vie des processus (comme `GenServer`). Il peut surveiller, redémarrer et superviser d'autres processus.
+	- **Rôle :** Un module [[Elixir]] qui gère le cycle de vie des processus (comme `GenServer`). Il peut surveiller, redémarrer et superviser d'autres processus.
 		- **Utilisation :** Idéal pour la création d'arbres de supervision qui garantissent la stabilité d'une application en redémarrant automatiquement les processus en cas d'échec.
 - 3. **`Task` :**
-	- **Rôle :** Un module Elixir qui permet d'exécuter des tâches asynchrones de manière concurrente. Il est souvent utilisé pour exécuter des opérations parallèles et collecter les résultats.
+	- **Rôle :** Un module [[Elixir]] qui permet d'exécuter des tâches asynchrones de manière concurrente. Il est souvent utilisé pour exécuter des opérations parallèles et collecter les résultats.
 		- **Utilisation :** Utile lorsque vous avez des tâches indépendantes que vous souhaitez exécuter en parallèle.
 - 4. **`Agent` :**
-	- **Rôle :** Un module Elixir qui permet de gérer un état partagé de manière concurrente. Il expose des fonctions pour accéder et mettre à jour cet état de manière sûre.
+	- **Rôle :** Un module [[Elixir]] qui permet de gérer un état partagé de manière concurrente. Il expose des fonctions pour accéder et mettre à jour cet état de manière sûre.
 		- **Utilisation :** Utile lorsque vous avez besoin de partager un état mutable entre plusieurs processus.
 - 5. **`Application` :**
-	- **Rôle :** Un module Elixir utilisé pour définir la structure de votre application, spécifier ses dépendances, et définir les comportements du cycle de vie de l'application.
+	- **Rôle :** Un module [[Elixir]] utilisé pour définir la structure de votre application, spécifier ses dépendances, et définir les comportements du cycle de vie de l'application.
 		- **Utilisation :** Chaque application Elixir a généralement un module Application qui définit son point d'entrée.
