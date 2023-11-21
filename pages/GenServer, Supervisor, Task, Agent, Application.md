@@ -2,6 +2,11 @@
 	- **Rôle :** Un module [[Elixir]] qui facilite la création de serveurs génériques, c'est-à-dire des processus qui peuvent maintenir un état et répondre à des requêtes de manière asynchrone.
 	- **Utilisation :** Utile pour implémenter des services, des agents d'état, ou toute autre logique où vous avez besoin de maintenir un état et de répondre à des requêtes.
 		- **(Crée des processus capables de maintenir un état et de répondre à des requêtes)**
+		- Les fonctions les plus importantes à savoir :
+			- start-link -> init
+			- call -> handle_call
+			- cast -> handle_cast
+			- send -> handle_info
 - 2. **`Supervisor` (Superviseur) :**
 	- **Rôle :** Un module [[Elixir]] qui gère le cycle de vie des processus (comme `GenServer`). Il peut surveiller, redémarrer et superviser d'autres processus.
 	- **Utilisation :** Idéal pour la création d'arbres de supervision qui garantissent la stabilité d'une application en redémarrant automatiquement les processus en cas d'échec.
