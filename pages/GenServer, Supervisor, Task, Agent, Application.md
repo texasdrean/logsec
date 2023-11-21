@@ -4,11 +4,11 @@
 		- **(Crée des processus capables de maintenir un état et de répondre à des requêtes)**
 		- Les fonctions les plus importantes à savoir :
 			- start-link -> init
-				- Démarre un GenServer puis initialise l'état du GenServer et démarre les appels
+				- Démarre un `GenServer` puis initialise l'état du `GenServer` et démarre les appels
 			- call -> handle_call
-				- Appels synchrones au GenServer (valeur de retour expectée)
+				- Appels `synchrones` au GenServer (valeur de retour expectée)
 			- cast -> handle_cast
-				- Appels asynchrones au GenServer (pas de valeur de retour)
+				- Appels `asynchrones` au GenServer (pas de valeur de retour)
 			- send -> handle_info
 				- Utilisé pour tous les autres messages qu'un serveur peut recevoir qui ne sont pas envoyés par `call` ou `cast`
 - 2. **`Supervisor` (Superviseur) :**
